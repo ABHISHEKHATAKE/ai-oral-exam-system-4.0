@@ -1,0 +1,185 @@
+.create-exam-container {
+  padding: 48px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.page-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.page-header p {
+  color: var(--text-medium);
+  font-size: 16px;
+}
+
+.exam-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section {
+  padding: 32px;
+}
+
+.form-section h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.section-description {
+  color: var(--text-medium);
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.file-upload {
+  position: relative;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.file-upload-label {
+  display: block;
+  padding: 40px 20px;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg-cream);
+}
+
+.file-upload-label:hover {
+  border-color: var(--primary);
+  background: white;
+}
+
+.file-placeholder {
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.file-name {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.student-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-cream);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.student-checkbox:hover {
+  background: white;
+  border-color: var(--primary);
+}
+
+.student-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.student-name {
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 15px;
+}
+
+.student-email {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.empty-students {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-light);
+}
+
+.selected-count {
+  padding: 12px 16px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  padding-top: 24px;
+}
+
+.form-actions .btn {
+  min-width: 140px;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .form-section {
+    padding: 24px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
